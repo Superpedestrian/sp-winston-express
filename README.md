@@ -19,6 +19,10 @@ log.error('Bad things!');
 
 ## Changes
 
+### 0.1.2
+
+- Corrected formatter raising an exception
+
 ### 0.1.1
 
 - Added missing dependencies
