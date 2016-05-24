@@ -24,16 +24,19 @@ var log = new winston.Logger({
       },
       formatter: function(options) {
         // Return string will be passed to logger.
+        var stack_trace = '';
+        if(options.meta && Object.keys(options.meta).length && options.meta.stack) {
+          if(typeof options.meta.stack === 'string') {
+            stack_trace = options.meta.stack
+          } else {
+            stack_trace = options.meta.stack.join('\n');
+          }
+        }
         return '[' + options.level.toUpperCase() + '] ' +
           options.timestamp() + ' ' +
           (options.message !== undefined ? options.message : '') +
           (options.meta && Object.keys(options.meta).length ? ' | ' +
-           JSON.stringify(options.meta) : '' ) +
-          (
-            options.meta && options.meta.stack !== undefined ?
-              '\nStack:\n' + options.meta.stack.join('\n') :
-              ''
-          ) ;
+           JSON.stringify(options.meta) : '' ) + stack_trace;
       },
       level: getenv('LOG_LEVEL', 'debug'),
       handleExceptions: true,
