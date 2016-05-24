@@ -1,6 +1,6 @@
 {
   "name": "sp-winston-express",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple winston log formatter and error handler for express",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Superpedestrian/sp-winston-express/issues"
   },
-  "homepage": "https://github.com/Superpedestrian/sp-winston-express#readme"
+  "homepage": "https://github.com/Superpedestrian/sp-winston-express#readme",
+  "dependencies": {
+    "getenv": "^0.6.0",
+    "winston": "^2.2.0"
+  }
 }
