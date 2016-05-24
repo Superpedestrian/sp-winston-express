@@ -16,3 +16,9 @@ app.use(log.errorLogger);
 log.info('Hi');
 log.error('Bad things!');
 ```
+
+## Changes
+
+### 0.1.1
+
+- Added missing dependencies
