@@ -1,0 +1,19 @@
+{
+  "name": "sp-winston-express",
+  "version": "0.0.0",
+  "description": "A simple winston log formatter and error handler for express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Superpedestrian/sp-winston-express.git"
+  },
+  "author": "Superpedestrian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Superpedestrian/sp-winston-express/issues"
+  },
+  "homepage": "https://github.com/Superpedestrian/sp-winston-express#readme"
+}
