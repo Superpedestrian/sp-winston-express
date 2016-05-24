@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Superpedestrian/sp-winston-express/issues"
   },
-  "homepage": "https://github.com/Superpedestrian/sp-winston-express#readme"
+  "homepage": "https://github.com/Superpedestrian/sp-winston-express#readme",
+  "dependencies": {
+    "getenv": "^0.6.0",
+    "winston": "^2.2.0"
+  }
 }
